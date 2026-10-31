@@ -1,0 +1,668 @@
+{
+  "schema_version": 1,
+  "license": "CC-BY-4.0（本文件为自写文本，可商用，需保留出处）",
+  "description": "断语库 · 自写版。结构参考开源项目，文本全部自写，出处只引书名与篇名，不抄原文。",
+  "rules": [
+    {
+      "id": "char_jia_winter",
+      "category": "性格",
+      "condition": {
+        "日主": "甲木",
+        "月令五行": "水",
+        "季节": "冬"
+      },
+      "conclusion": "寒木先要火。这类盘底子不弱，但人容易闷着不发，想法多、动作少。得一点暖才亮得起来。",
+      "source": "《穷通宝鉴》冬木需火",
+      "confidence": "高",
+      "suggestion": "主动去做一件有热度、能被看见的事，比在心里盘算十遍有用。"
+    },
+    {
+      "id": "char_jia_spring",
+      "category": "性格",
+      "condition": {
+        "日主": "甲木",
+        "季节": "春"
+      },
+      "conclusion": "春木正旺，往上长是本能。这类人不太受得了被压，压一次记很久。",
+      "source": "《滴天髓》甲木参天",
+      "confidence": "高",
+      "suggestion": "与其被人催，不如自己定节奏；不然容易把好意当管束。"
+    },
+    {
+      "id": "char_yi_spring",
+      "category": "性格",
+      "condition": {
+        "日主": "乙木"
+      },
+      "conclusion": "乙木柔而韧，会拐弯，不硬碰。这类人能忍，但忍到某个点会一次断干净。",
+      "source": "《滴天髓》乙木虽柔",
+      "confidence": "高",
+      "suggestion": "不舒服早说一句，比攒到断的那天省事。"
+    },
+    {
+      "id": "char_bing_summer",
+      "category": "性格",
+      "condition": {
+        "日主": "丙火",
+        "季节": "夏"
+      },
+      "conclusion": "夏火太盛，热得快也散得快。这类人场上很亮，私下反而安静。",
+      "source": "《穷通宝鉴》夏火宜水",
+      "confidence": "中",
+      "suggestion": "给自己找一处能安静下来的地方，不然会一直烧。"
+    },
+    {
+      "id": "char_ding_winter",
+      "category": "性格",
+      "condition": {
+        "日主": "丁火",
+        "季节": "冬"
+      },
+      "conclusion": "冬夜的灯，光不大，但认路。这类人不张扬，靠的是持续。",
+      "source": "《滴天髓》丁火柔中",
+      "confidence": "中",
+      "suggestion": "别拿自己去跟火把比亮度，你比的是不灭。"
+    },
+    {
+      "id": "char_wu_spring",
+      "category": "性格",
+      "condition": {
+        "日主": "戊土",
+        "季节": "春"
+      },
+      "conclusion": "春土需疏，太闷则滞。这类人话不多，心里的账记得清。",
+      "source": "《穷通宝鉴》春土宜木疏",
+      "confidence": "中",
+      "suggestion": "把账说出来一半，别全记账上。"
+    },
+    {
+      "id": "char_ji_autumn",
+      "category": "性格",
+      "condition": {
+        "日主": "己土",
+        "季节": "秋"
+      },
+      "conclusion": "秋土收成，务实。这类人先看条件再表态，常被误解为冷淡。",
+      "source": "《滴天髓》己土卑湿",
+      "confidence": "中",
+      "suggestion": "把心里的判断说出口，别人不会自己补。"
+    },
+    {
+      "id": "char_geng_autumn",
+      "category": "性格",
+      "condition": {
+        "日主": "庚金",
+        "季节": "秋"
+      },
+      "conclusion": "秋金锋利，认死理。这类人一旦判断了，很难被劝回来。",
+      "source": "《滴天髓》庚金带煞",
+      "confidence": "高",
+      "suggestion": "留一个“我可能错”的口子，路会宽很多。"
+    },
+    {
+      "id": "char_xin_autumn",
+      "category": "性格",
+      "condition": {
+        "日主": "辛金",
+        "季节": "秋"
+      },
+      "conclusion": "辛金要洗。这类人对干净、体面、细节特别敏感，被将就过一次就记着。",
+      "source": "《滴天髓》辛金软弱",
+      "confidence": "中",
+      "suggestion": "在意的事直接提要求，别人猜不到你的标准。"
+    },
+    {
+      "id": "char_ren_winter",
+      "category": "性格",
+      "condition": {
+        "日主": "壬水",
+        "季节": "冬"
+      },
+      "conclusion": "冬水冰封，看着静，底下在动。这类人表面随和，主意极硬。",
+      "source": "《穷通宝鉴》冬水宜火",
+      "confidence": "中",
+      "suggestion": "把真实态度露一点，别让人误以为你无所谓。"
+    },
+    {
+      "id": "char_gui_spring",
+      "category": "性格",
+      "condition": {
+        "日主": "癸水",
+        "季节": "春"
+      },
+      "conclusion": "癸水润物，细而不断。这类人擅长收拾残局，也容易被当成理所当然。",
+      "source": "《滴天髓》癸水至弱",
+      "confidence": "中",
+      "suggestion": "帮完要说一句“这次是我做的”，不然没人记得。"
+    },
+    {
+      "id": "strong_lower_wealth",
+      "category": "格局",
+      "condition": {
+        "旺衰": [
+          "偏旺",
+          "极旺"
+        ],
+        "十神": {
+          "财": "≥2"
+        }
+      },
+      "conclusion": "身旺财旺，是难得的好底子：扛得住，也够得着。差别只在有没有一门手艺把钱接住。",
+      "source": "《渊海子平》身财两停",
+      "confidence": "中",
+      "suggestion": "别同时开三条口子，先让一条真正赚钱。"
+    },
+    {
+      "id": "weak_heavy_officer",
+      "category": "格局",
+      "condition": {
+        "旺衰": [
+          "偏弱",
+          "极弱"
+        ],
+        "十神": {
+          "官杀": "≥2"
+        }
+      },
+      "conclusion": "身弱官杀重：外面的规矩比你大。这类盘早年多半被推着走，容易压抑、怕出错。",
+      "source": "《三命通会》论官杀",
+      "confidence": "高",
+      "suggestion": "找一个能护住你的人或一套流程，比硬扛有效。"
+    },
+    {
+      "id": "strong_print",
+      "category": "格局",
+      "condition": {
+        "旺衰": [
+          "偏旺",
+          "极旺"
+        ],
+        "十神": {
+          "印": "≥2"
+        }
+      },
+      "conclusion": "印重身旺：想得深，动得慢。不是不会，是要等一个“想通了”。",
+      "source": "《滴天髓》印绶论",
+      "confidence": "中",
+      "suggestion": "给自己定“想通七成就动手”的规矩。"
+    },
+    {
+      "id": "food_hurt_generate_wealth",
+      "category": "格局",
+      "condition": {
+        "十神": {
+          "食伤": "≥2",
+          "财": "≥1"
+        }
+      },
+      "conclusion": "食伤生财：靠手艺、靠表达换钱，比靠熬资历快。",
+      "source": "《子平真诠》食伤生财",
+      "confidence": "高",
+      "suggestion": "把最熟的那件事，做成别人能买的形式。"
+    },
+    {
+      "id": "wealth_generate_officer",
+      "category": "格局",
+      "condition": {
+        "十神": {
+          "财": "≥1",
+          "官": "≥1"
+        }
+      },
+      "conclusion": "财生官：钱能换来位置，位置也能带来钱。这类盘的关键是别在中间那一段说不清。",
+      "source": "《子平真诠》财官相生",
+      "confidence": "中",
+      "suggestion": "钱和权之间留一份书面记录，比口头默契稳。"
+    },
+    {
+      "id": "print_generate_self",
+      "category": "格局",
+      "condition": {
+        "旺衰": [
+          "偏弱"
+        ],
+        "十神": {
+          "印": "≥1"
+        }
+      },
+      "conclusion": "印来生身：底子薄但有人扶。这类人常被贵人带过一两次坎。",
+      "source": "《渊海子平》印绶生身",
+      "confidence": "中",
+      "suggestion": "把受过的帮记下来，将来要还的时候别记错人。"
+    },
+    {
+      "id": "officer_kill_mixed",
+      "category": "风险",
+      "condition": {
+        "十神": {
+          "正官": "≥1",
+          "七杀": "≥1"
+        }
+      },
+      "conclusion": "官杀混杂：想守规矩又不服管。这类盘常在“该听谁”上吃过亏。",
+      "source": "《子平真诠》论官杀",
+      "confidence": "中",
+      "suggestion": "同一时间只认一个上级、一套标准。"
+    },
+    {
+      "id": "hurt_officer_see_officer",
+      "category": "风险",
+      "condition": {
+        "十神": {
+          "伤官": "≥1",
+          "正官": "≥1"
+        }
+      },
+      "conclusion": "伤官见官：嘴比位置硬。容易在该闭嘴的场合把话说尽。",
+      "source": "《三命通会》伤官见官",
+      "confidence": "中",
+      "suggestion": "有意见写下来放一夜，第二天还想说再说。"
+    },
+    {
+      "id": "peer_rob_wealth",
+      "category": "风险",
+      "condition": {
+        "十神": {
+          "比劫": "≥2",
+          "财": "≥2"
+        }
+      },
+      "conclusion": "比劫夺财：钱不是不会来，是留不住——多半花在人情和兄弟上。",
+      "source": "《渊海子平》比劫夺财",
+      "confidence": "中",
+      "suggestion": "钱一到手先分账，把该存的先划走。"
+    },
+    {
+      "id": "kill_without_control",
+      "category": "风险",
+      "condition": {
+        "十神": {
+          "七杀": "≥2"
+        },
+        "缺": [
+          "印",
+          "食伤"
+        ]
+      },
+      "conclusion": "杀重无制：压力来了没缓冲。这类人容易硬撑到身体出信号才停。",
+      "source": "《三命通会》杀无制",
+      "confidence": "中",
+      "suggestion": "给自己设一个“提前停下”的规则，别等身体通知。"
+    },
+    {
+      "id": "wealth_heavy_weak",
+      "category": "风险",
+      "condition": {
+        "旺衰": [
+          "偏弱",
+          "极弱"
+        ],
+        "十神": {
+          "财": "≥2"
+        }
+      },
+      "conclusion": "财多身弱：机会多，追不动。常见的不是没机会，是机会来的时候人已经累了。",
+      "source": "《渊海子平》财多身弱",
+      "confidence": "高",
+      "suggestion": "同一阶段只接一个机会，剩下的记下来排队。"
+    },
+    {
+      "id": "huge_print_blocked",
+      "category": "风险",
+      "condition": {
+        "十神": {
+          "印": "≥3"
+        }
+      },
+      "conclusion": "印太重：想得太多容易把自己困住，别人给的建议反倒成了负担。",
+      "source": "《滴天髓》印重",
+      "confidence": "低",
+      "suggestion": "把“再想想”改成“先试一天”。"
+    },
+    {
+      "id": "no_output",
+      "category": "风险",
+      "condition": {
+        "十神": {
+          "食伤": "=0"
+        },
+        "旺衰": [
+          "偏旺",
+          "极旺"
+        ]
+      },
+      "conclusion": "身旺无泄：力气全攒在身上，容易憋出脾气。",
+      "source": "《子平真诠》旺极宜泄",
+      "confidence": "中",
+      "suggestion": "找一个能出力的地方，运动、写作、做东西都行。"
+    },
+    {
+      "id": "void_in_wealth",
+      "category": "细节",
+      "condition": {
+        "空亡": {
+          "落宫": [
+            "财"
+          ]
+        }
+      },
+      "conclusion": "财落空亡：看得见、抓不牢。常在“差一步”上可惜。",
+      "source": "《六壬大全》空亡义",
+      "confidence": "低",
+      "suggestion": "重要的钱和承诺，都要落到纸面。"
+    },
+    {
+      "id": "sanhe_complete",
+      "category": "格局",
+      "condition": {
+        "地支": {
+          "三合局": true
+        }
+      },
+      "conclusion": "三合成局：盘里有一股拧成绳的力量。用对了成事快，用错了拧得更紧。",
+      "source": "《渊海子平》三合论",
+      "confidence": "高",
+      "suggestion": "看清这股力往哪去，顺着推。"
+    },
+    {
+      "id": "day_year_clash",
+      "category": "细节",
+      "condition": {
+        "地支": {
+          "日年冲": true
+        }
+      },
+      "conclusion": "日年相冲：跟出身这一块容易拧。不是不好，是早早想走自己的路。",
+      "source": "《三命通会》论冲",
+      "confidence": "中",
+      "suggestion": "把“不同意”说清楚，比不告而别省事。"
+    },
+    {
+      "id": "day_month_clash",
+      "category": "细节",
+      "condition": {
+        "地支": {
+          "日月冲": true
+        }
+      },
+      "conclusion": "日月相冲：成长环境里换过地方，或家里有过一次大的变动。",
+      "source": "《三命通会》论冲",
+      "confidence": "低",
+      "suggestion": "别把那次变动当成自己的责任。"
+    },
+    {
+      "id": "day_hour_clash",
+      "category": "细节",
+      "condition": {
+        "地支": {
+          "日时冲": true
+        }
+      },
+      "conclusion": "日时相冲：越到后面越想换个活法，中年起容易动一次大的。",
+      "source": "《三命通会》论冲",
+      "confidence": "低",
+      "suggestion": "真要换，提前一年准备，别临时裸跳。"
+    },
+    {
+      "id": "hour_wealth",
+      "category": "六亲",
+      "condition": {
+        "十神落宫": {
+          "财": "时柱"
+        }
+      },
+      "conclusion": "财在时上：晚年不缺钱，也多靠自己攒下来。",
+      "source": "《渊海子平》宫位论",
+      "confidence": "中",
+      "suggestion": "早存早好，别把晚年的稳当都押在别人身上。"
+    },
+    {
+      "id": "year_officer",
+      "category": "六亲",
+      "condition": {
+        "十神落宫": {
+          "官杀": "年柱"
+        }
+      },
+      "conclusion": "官杀在年：早年规矩重，家教或环境压得住人。",
+      "source": "《三命通会》宫位论",
+      "confidence": "中",
+      "suggestion": "把“被要求”和“我想要”分开记，别混成一件事。"
+    },
+    {
+      "id": "month_print",
+      "category": "六亲",
+      "condition": {
+        "十神落宫": {
+          "印": "月柱"
+        }
+      },
+      "conclusion": "印在月：靠家里或靠一位长辈托住你的那段，是真的托住了。",
+      "source": "《渊海子平》宫位论",
+      "confidence": "中",
+      "suggestion": "有机会把这份支撑说出来。"
+    },
+    {
+      "id": "day_peer",
+      "category": "六亲",
+      "condition": {
+        "十神落宫": {
+          "比劫": "日柱"
+        }
+      },
+      "conclusion": "比劫在日：自己跟自己较劲的时候多。",
+      "source": "《渊海子平》宫位论",
+      "confidence": "低",
+      "suggestion": "把“我不甘心”和“我不该”分开想。"
+    },
+    {
+      "id": "health_fire_weak",
+      "category": "健康",
+      "condition": {
+        "五行": {
+          "火": "弱"
+        }
+      },
+      "conclusion": "火弱：循环与情绪容易偏低。冬天和夜里更明显。",
+      "source": "《黄帝内经》五行配脏腑（借用）",
+      "confidence": "低",
+      "suggestion": "别用熬夜补白天，越补越亏。"
+    },
+    {
+      "id": "health_wood_weak",
+      "category": "健康",
+      "condition": {
+        "五行": {
+          "木": "弱"
+        }
+      },
+      "conclusion": "木弱：筋骨与情绪疏解偏弱，久坐会更明显。",
+      "source": "《黄帝内经》五行配脏腑（借用）",
+      "confidence": "低",
+      "suggestion": "每天有一段真正的走动，不是从房间走到厨房。"
+    },
+    {
+      "id": "career_output",
+      "category": "事业",
+      "condition": {
+        "十神": {
+          "食伤": "≥2"
+        }
+      },
+      "conclusion": "食伤重：适合做需要表达与手艺的事，坐办公室纯执行会憋。",
+      "source": "《子平真诠》食伤论",
+      "confidence": "中",
+      "suggestion": "在现在的岗位里找一个能动手的小口子。"
+    },
+    {
+      "id": "career_officer",
+      "category": "事业",
+      "condition": {
+        "十神": {
+          "官": "≥2"
+        }
+      },
+      "conclusion": "官星重：在有规矩、有层级的地方更容易出成绩。",
+      "source": "《三命通会》官星论",
+      "confidence": "中",
+      "suggestion": "把规则吃透再谈破格，顺序反了会吃亏。"
+    },
+    {
+      "id": "career_wealth",
+      "category": "事业",
+      "condition": {
+        "十神": {
+          "财": "≥2"
+        }
+      },
+      "conclusion": "财星重：对钱和机会敏感，适合跟人打交道、跑起来做事。",
+      "source": "《渊海子平》财论",
+      "confidence": "中",
+      "suggestion": "机会多的时候学会拒，不然样样都开个头。"
+    },
+    {
+      "id": "luck_clash_dayun",
+      "category": "运势",
+      "condition": {
+        "大运": {
+          "冲日支": true
+        }
+      },
+      "conclusion": "大运冲日支：这十年环境会动，住处、关系、工作至少换一样。",
+      "source": "《三命通会》岁运论",
+      "confidence": "中",
+      "suggestion": "把变当成常态来准备，别等它突然来。"
+    },
+    {
+      "id": "luck_year_void",
+      "category": "运势",
+      "condition": {
+        "流年": {
+          "落空亡": true
+        }
+      },
+      "conclusion": "流年落空：这一年容易“计划了但没落地”。",
+      "source": "《渊海子平》空亡论",
+      "confidence": "低",
+      "suggestion": "今年把目标减半，做透一件。"
+    },
+    {
+      "id": "ge_zhengguan",
+      "category": "格局",
+      "condition": {
+        "月令": "正官格"
+      },
+      "conclusion": "正官成格：位置感强，做事有分寸，适合在体制、机构里稳步往上。",
+      "source": "《子平真诠》正官格",
+      "confidence": "中",
+      "suggestion": "把分寸感用在人身上，别只用在事上。"
+    },
+    {
+      "id": "ge_qisha",
+      "category": "格局",
+      "condition": {
+        "月令": "七杀格"
+      },
+      "conclusion": "七杀成格：敢担事，也容易被人当刀使。这类人多在压力最大的位置上出成绩。",
+      "source": "《子平真诠》七杀格",
+      "confidence": "中",
+      "suggestion": "接活之前先问一句：这是谁的责任。"
+    },
+    {
+      "id": "ge_shishen",
+      "category": "格局",
+      "condition": {
+        "月令": "食神格"
+      },
+      "conclusion": "食神成格：心宽手稳，做事有节奏，适合做需要长期打磨的事。",
+      "source": "《子平真诠》食神格",
+      "confidence": "中",
+      "suggestion": "别被“快”带跑，你的优势是慢得住。"
+    },
+    {
+      "id": "ge_shangguan",
+      "category": "格局",
+      "condition": {
+        "月令": "伤官格"
+      },
+      "conclusion": "伤官成格：才气外露，不服管。做创作、做技术能出头，做纯执行会顶牛。",
+      "source": "《子平真诠》伤官格",
+      "confidence": "中",
+      "suggestion": "找能容你说话的地方，别在憋人的岗位上耗。"
+    },
+    {
+      "id": "ge_zhengcai",
+      "category": "格局",
+      "condition": {
+        "月令": "正财格"
+      },
+      "conclusion": "正财成格：一分一分挣，稳当。这类人不擅长暴富，擅长不亏。",
+      "source": "《子平真诠》正财格",
+      "confidence": "中",
+      "suggestion": "把“稳”变成复利，别只当保守。"
+    },
+    {
+      "id": "ge_piancai",
+      "category": "格局",
+      "condition": {
+        "月令": "偏财格"
+      },
+      "conclusion": "偏财成格：路子活，来钱的地方多，但不稳定。",
+      "source": "《子平真诠》偏财格",
+      "confidence": "中",
+      "suggestion": "留一份不动的底，再谈波动。"
+    },
+    {
+      "id": "ge_zhengyin",
+      "category": "格局",
+      "condition": {
+        "月令": "正印格"
+      },
+      "conclusion": "正印成格：靠学识与口碑立身，越老越吃香。",
+      "source": "《子平真诠》正印格",
+      "confidence": "中",
+      "suggestion": "把学过的东西整理成能交付的形式。"
+    },
+    {
+      "id": "ge_pianyin",
+      "category": "格局",
+      "condition": {
+        "月令": "偏印格"
+      },
+      "conclusion": "偏印成格：想得偏、看得深，常在不主流的领域见长。",
+      "source": "《子平真诠》偏印格",
+      "confidence": "低",
+      "suggestion": "偏门要有一个能验证的出口，不然容易越想越玄。"
+    },
+    {
+      "id": "ge_zhonghe",
+      "category": "格局",
+      "condition": {
+        "旺衰": [
+          "中和"
+        ]
+      },
+      "conclusion": "中和之局：没有明显的短板，也没有特别尖的刃。这类盘的走势看大运，运来则起。",
+      "source": "《滴天髓》中和论",
+      "confidence": "中",
+      "suggestion": "别急着给自己定型，你还没到分岔口。"
+    },
+    {
+      "id": "ge_cong",
+      "category": "格局",
+      "condition": {
+        "旺衰": [
+          "极弱"
+        ],
+        "十神": {
+          "比印": "=0"
+        }
+      },
+      "conclusion": "疑似从格：一边倒的盘不能按“身弱”断，要从其强处走。这条我标低置信。",
+      "source": "《子平真诠》从格说",
+      "confidence": "低",
+      "suggestion": "若你确实一路顺、少波折，才可能是从格；否则仍按身弱看。"
+    }
+  ],
+  "usage_note": "匹配器按 condition 打分，命中即出；每条必须带 source 与 confidence。没有出处的条目不进库。"
+}
