@@ -2,6 +2,10 @@
 
 **排四柱、算旺衰、起大六壬。每句话都能被查。**
 
+> **BaZi (Four Pillars) + Da Liu Ren CLI.** Every reading cites a classical source and a confidence level — and says out loud what it does not know.
+>
+> No API key, no network, no account. Pure Python.
+
 ![八字](docs/bazi.png)
 
 ![六壬](docs/liuren.png)
